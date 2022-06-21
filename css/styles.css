@@ -3,3 +3,217 @@
   display: flex;
   align-items: flex-start;
 }
+
+/* Загальні стилі тут
+Для кожної сторінки сайту окремий css файл */
+
+/* Спільні елементи: кольори, шрифти, 
+розмір тексту, розмір заголовків */
+
+:root {
+  --main-color: #181817;
+  --secondary-color: #6f6f6f;
+  --accent-color: #f6d88c;
+  --light-color: #f8f3ec;
+  --main-font: 'Darker Grotesque', sans-serif;
+  --title-size: 65px;
+  --text-size: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #f8f3ec;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 16px 55px 45px;
+  /* Вирівнювання */
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #6e6e6e;
+}
+
+.navigation {
+  font-family: var(--main-font);
+  margin-right: 262px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item {
+  margin-right: 40px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-link {
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: var(--text-size);
+}
+
+.navigation-link:hover {
+  color: var(--main-color);
+}
+
+.logo {
+  margin-right: 420px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: var(--main-color);
+  font-family: var(--main-font);
+  text-decoration: none;
+}
+
+.logo-dot {
+  color: var(--accent-color);
+}
+
+.socials {
+}
+
+.social-link {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.hero {
+}
+.hero-title {
+}
+.hero-text {
+}
+.btn {
+  background: #f6d88c;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 22px 36px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: red;
+  border-radius: 40px;
+}
+
+.hero-img {
+}
+.clients {
+}
+.clients-title {
+}
+.clients-text {
+}
+.clients-img {
+}
+.description {
+}
+.decription-img {
+}
+.title .description-list {
+}
+.description-item {
+}
+.description-btn {
+}
+.text {
+}
+
+.video {
+}
+.video-title {
+}
+.provide {
+}
+.provide-list {
+}
+.provide-item {
+}
+.provide-img {
+}
+.provide-title {
+}
+.provide-link {
+}
+.slider-container {
+}
+.wrapper {
+}
+.slider {
+}
+.slider-item {
+}
+.offer {
+}
+.blog {
+}
+.blog-container {
+}
+.blog-title {
+}
+.blog-descr {
+}
+.blog-link {
+}
+.blog-articles {
+}
+.blog-article {
+}
+.article-title {
+}
+.article-text {
+}
+.article-link {
+}
+.footer {
+}
+.footer-socials {
+}
+.socials-text {
+}
+.socials-list {
+}
+.social-item {
+}
+.social-link {
+}
+.footer-newsletters {
+}
+.newsletter-title {
+}
+.newsletter-text {
+}
+.footer-contacts {
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contact-title {
+}
+.contact-link {
+}
+.footer-copyright {
+}
+.license {
+}
+.footer-link {
+}
