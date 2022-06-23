@@ -1,9 +1,3 @@
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-  align-items: flex-start;
-}
-
 /* Загальні стилі тут
 Для кожної сторінки сайту окремий css файл */
 
@@ -25,12 +19,18 @@
 }
 
 .wrapper {
-  background-color: #f8f3ec;
+  background-color: var(--light-color);
 }
 
 .list {
   list-style: none;
   padding: 0;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
 }
 
 .header {
@@ -93,38 +93,151 @@
   text-decoration: none;
   margin-right: 20px;
 }
+/* ------------------------------------ */
+
+/* Hero section */
 
 .hero {
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
 }
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  font-size: 0;
+}
+
+.hero-left-side {
+  margin-right: 100px;
+}
+
 .hero-title {
+  margin-top: 0;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 71px;
+  letter-spacing: -0.02em;
+  color: var(--main-color);
+  width: 500px;
+  margin-bottom: 20px;
 }
+
 .hero-text {
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 30px;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+  margin-top: 0;
+  width: 370px;
 }
+
 .btn {
-  background: #f6d88c;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: var(--text-size);
+  text-transform: uppercase;
+  color: var(--main-color);
+  background: var(--accent-color);
   border: none;
   outline: none;
-  border-radius: 16px;
   padding: 22px 36px;
+  border-radius: 16px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: red;
-  border-radius: 40px;
+  background-color: #f8d735;
+}
+
+.hero-right-side {
+  padding: 52px 0;
 }
 
 .hero-img {
+  width: 268px;
+  height: 653px;
 }
+.hero-img:first-child {
+  margin-right: 14px;
+}
+
+/* ---------------------------------- */
+
+/* Clients section */
+
 .clients {
 }
+
+.clients-left-side {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.clients-left-side::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 146px;
+  background-color: var(--accent-color);
+  margin-right: 30px;
+}
+
 .clients-title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 35px;
+  color: var(--main-color);
+  width: 295px;
+  margin-bottom: 10px;
 }
+
 .clients-text {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 26px;
+  color: var(--secondary-color);
+  width: 295px;
+  margin-top: 0;
 }
+
+/* Для дз портфоліо 3*3 картинки */
+.clients-right-side {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 695px;
+  font-size: 0;
+}
+
 .clients-img {
+  width: 224px;
+  height: 91px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Для дз портфоліо 3*3 картинки */
+.clients-img:nth-child(3n + 3) {
+  margin-right: 0;
 }
 .description {
+}
+.description-container {
+  padding-top: 185px;
+  padding-left: 215px;
 }
 .decription-img {
 }
